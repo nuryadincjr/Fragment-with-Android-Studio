@@ -21,8 +21,6 @@ public class MainActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
 
-        getFragmentPage(new HomeFragment());
-
         bottomNavigationItemView = findViewById(R.id.bottom_navigation);
         bottomNavigationItemView.setOnNavigationItemSelectedListener(new BottomNavigationView.OnNavigationItemSelectedListener() {
             @Override
@@ -53,5 +51,4 @@ public class MainActivity extends AppCompatActivity {
         }
         return true;
     }
-
 }
